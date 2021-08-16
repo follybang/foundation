@@ -1,0 +1,75 @@
+.communication {
+  padding: 50px 15px;
+
+  &__subtitle {
+    font-size: 22px;
+    line-height: 34px;
+    color: $blue-font-color;
+    font-weight: 700;
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -0.36px;
+    margin: 0;
+    margin-top: 17px;
+  }
+
+  &__description {
+    font-size: 24px;
+    line-height: 34px;
+    margin: 0;
+    margin-top: 18px;
+  }
+
+  &__start-button {
+    width: 160px;
+    height: 48px;
+    background-color: $blue-color;
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 30px;
+  }
+
+  &__image {
+    width: 290px;
+    height: 291px;
+    margin-top: 40px;
+  }
+
+  &__image-caption {
+    color: $second-font-color;
+    text-align: center;
+    margin-top: 17px;
+  }
+
+  &__line {
+    border-bottom: 1px solid black;
+    margin-top: 40px;
+    width: 150px;
+    opacity: 0.1;
+  }
+}
+
+.communication-block {
+  margin-top: 33px;
+
+  &__text {
+    margin: 0;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &__link {
+    font-weight: 700;
+    color: $blue-color;
+  }
+}
+
+.communication-block:last-child {
+  margin-top: 32px;
+}
