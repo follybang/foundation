@@ -83,31 +83,6 @@
 
 @include for-large-up {
   .acquire {
-    padding-left: 130px;
-
-    &__second-subtitle {
-      color: $green-font-color;
-      font-size: 22px;
-      line-height: 34px;
-      font-weight: 700;
-    }
-
-    &__title {
-      font-size: 56px;
-      line-height: 56px;
-      width: 462px;
-      height: 112px;
-      margin: 0;
-    }
-
-    &__description {
-      font-size: 24px;
-      line-height: 34px;
-      width: 461px;
-      height: 102px;
-      margin: 0;
-    }
-
     &__subtitle {
       display: none;
     }
@@ -123,5 +98,113 @@
     &__line {
       display: none;
     }
+  }
+}
+
+.features {
+  &__subtitle {
+    color: $green-font-color;
+    font-size: 22px;
+    line-height: 34px;
+    font-weight: 700;
+  }
+
+  &__subtitle {
+    @include for-small {
+      display: none;
+    }
+  }
+}
+
+@include for-large-up {
+  .features {
+    display: flex;
+    padding-left: 128px;
+
+    &__image {
+      margin-left: auto;
+    }
+
+    &__title {
+      font-size: 56px;
+      line-height: 56px;
+      width: 462px;
+      height: 112px;
+      margin: 0;
+      margin-top: 24px;
+    }
+
+    &__description {
+      font-size: 24px;
+      line-height: 34px;
+      width: 461px;
+      height: 102px;
+      margin: 0;
+      margin-top: 30px;
+    }
+  }
+
+  .tips {
+    position: relative;
+  }
+
+  .tips-hidden-image {
+    position: absolute;
+    top: 258px;
+  }
+
+  .features-block {
+    border-bottom: 1px solid #2b292d26;
+    padding-bottom: 20px;
+    margin-top: 21px;
+
+    &_selected {
+      border-bottom: 3px solid $selected-blue-color;
+      margin-top: 42px;
+
+      .features-block__title {
+        color: $selected-blue-color;
+      }
+    }
+
+    &__title {
+      margin: 0;
+      line-height: 26px;
+      font-size: 22px;
+      font-weight: 700;
+      margin-left: 15px;
+    }
+
+    &__description {
+      font-size: 18px;
+      line-height: 26px;
+      margin: 0;
+      margin-top: 8px;
+      display: inline-block;
+      max-width: 459px;
+    }
+  }
+}
+
+.features-header {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@include for-small {
+  .tips-hidden-image {
+    display: none;
+  }
+
+  .features-desktop {
+    display: none;
+  }
+
+  .features__image {
+    display: none;
   }
 }

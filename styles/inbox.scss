@@ -2,6 +2,10 @@
   background-color: $inbox-back-color;
   padding: 50px 15px 48px 15px;
 
+  &__figure {
+    margin: 0;
+  }
+
   &__image {
     width: 290px;
     height: 348px;
@@ -63,4 +67,71 @@
 
 .director {
   color: $second-font-color;
+}
+
+@include for-large-up {
+  .inbox {
+    display: flex;
+    height: 790px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+
+    &__figure {
+      margin: 0 164px 0 193px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__image {
+      width: 425px;
+      height: 510px;
+    }
+
+    &__caption {
+      display: block;
+      font-size: 14px;
+      line-height: 22px;
+      opacity: 0.6;
+      margin-top: 15px;
+    }
+
+    .text-block {
+      margin-right: auto;
+    }
+
+    .team-inbox {
+      padding-left: 28px;
+    }
+
+    &__subtitle {
+      margin: 0;
+    }
+
+    &__title {
+      margin-top: 24px;
+      width: 462px;
+      font-size: 56px;
+      line-height: 56px;
+    }
+
+    &__description {
+      margin-top: 30px;
+      width: 461px;
+    }
+
+    .comment {
+      margin-top: 44px;
+      width: 519px;
+    }
+  }
+}
+
+@include for-small {
+  .inbox {
+    &__caption {
+      display: none;
+    }
+  }
 }

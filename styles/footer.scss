@@ -44,9 +44,11 @@
     margin: 0;
     margin: 30px 0 18px 15px;
     line-height: 28px;
+    font-size: 22px;
   }
 
   &__list {
+    font-size: 18px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -76,5 +78,139 @@
   &__item {
     margin-right: 20px;
     display: block;
+  }
+}
+
+@include for-large-up {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: 389px;
+
+    &__line {
+      display: none;
+    }
+
+    &__desktop-line {
+      border-bottom: 1px solid #e3e3e3;
+      margin-top: 59px;
+    }
+
+    &__navigation {
+      display: flex;
+    }
+
+    &__links {
+      display: flex;
+      height: 50px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 132px 0 130px;
+    }
+  }
+
+  .footer-logo {
+    display: flex;
+    align-items: center;
+
+    &__image {
+      margin: 0;
+    }
+
+    &__name {
+      text-align: left;
+    }
+
+    &__text {
+      margin-left: 9px;
+    }
+
+    &__name {
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    &__desсription {
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+
+  .about-company {
+    width: 615px;
+    padding-left: 130px;
+    margin-top: 44px;
+
+    &__description {
+      width: 360px;
+      height: 85px;
+      display: inline-block;
+      color: $second-font-color;
+      font-size: 18px;
+      line-height: 26px;
+      margin-top: 26px;
+    }
+  }
+
+  .downloads {
+    margin: 0;
+    justify-content: left;
+    margin-top: 25px;
+
+    &__item {
+      margin: 0;
+
+      &:last-of-type {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .additional-navigation {
+    display: flex;
+    margin-top: 60px;
+  }
+
+  .product-nav,
+  .company-nav {
+    &__title {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    &__list {
+      margin: 0;
+      font-size: 18px;
+      line-height: 30px;
+      margin-top: 18px;
+    }
+  }
+
+  .company-nav {
+    margin-left: 90px;
+  }
+
+  .terms-nav {
+    margin: 0;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+      margin: 0;
+    }
+  }
+
+  .social-links {
+    margin: 0;
+  }
+}
+
+@include for-small {
+  .about-company {
+    &__description {
+      display: none;
+    }
   }
 }

@@ -27,6 +27,7 @@
     font-size: 18px;
     font-weight: 700;
     margin-top: 30px;
+    cursor: pointer;
   }
 }
 
@@ -37,6 +38,10 @@
   border-radius: 8px;
   margin-top: 15px;
   display: flex;
+
+  &:nth-of-type(1) {
+    margin-top: 39px;
+  }
 
   &__name {
     font-size: 22px;
@@ -71,6 +76,90 @@
   }
 }
 
-.hiring > div:nth-of-type(1) {
-  margin-top: 39px;
+@include for-large-up {
+  .hiring {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 105px 0 110px 0;
+
+    &__title {
+      font-size: 55px;
+      line-height: 55px;
+    }
+
+    &__description {
+      width: 555px;
+      margin-top: 20px;
+    }
+
+    &__button {
+      width: 247px;
+      height: 48px;
+      margin-top: 28px;
+    }
+  }
+
+  .vacancy {
+    width: 750px;
+    height: 81px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    margin-top: 20px;
+
+    &:hover {
+      background-color: $third-blue-color;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    &:first-of-type {
+      margin-top: 110px;
+    }
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__name {
+      margin: 0;
+      width: 400px;
+    }
+
+    &__place {
+      margin: 0;
+    }
+
+    &__button {
+      background-color: transparent;
+      border: none;
+      height: 100%;
+    }
+
+    &__button-arrow-white {
+      width: 7px;
+      height: 12px;
+      display: none;
+    }
+
+    &:hover &__button-arrow {
+      display: none;
+    }
+
+    &:hover &__button-arrow-white {
+      display: block;
+    }
+  }
+}
+
+@include for-small {
+  .vacancy {
+    &__button-arrow-white {
+      display: none;
+    }
+  }
 }

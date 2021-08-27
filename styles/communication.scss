@@ -73,3 +73,72 @@
 .communication-block:last-child {
   margin-top: 32px;
 }
+
+@include for-large-up {
+  .communication {
+    display: flex;
+    flex-direction: column;
+    height: 866px;
+    padding: 110px 130px 110px 126px;
+
+    &__subtitle {
+      display: inline-block;
+      margin-top: 13px;
+    }
+
+    &__title {
+      width: 462px;
+      font-size: 56px;
+      line-height: 56px;
+      margin-top: 24px;
+      letter-spacing: -0.5px;
+    }
+
+    &__description {
+      width: 461px;
+      margin-top: 30px;
+    }
+
+    &__start-button {
+      margin-top: 39px;
+    }
+
+    &__image {
+      width: 425px;
+      height: 426px;
+      margin: 0;
+    }
+
+    &__image-caption {
+      font-size: 14px;
+      line-height: 22px;
+      margin-top: 17px;
+    }
+
+    &__line {
+      margin-top: 26px;
+    }
+
+    &__links {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .communication-block {
+      width: 360px;
+
+      &__link {
+        display: inline-block;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .communicate-better {
+    display: flex;
+
+    &__text {
+      margin-right: 193px;
+    }
+  }
+}

@@ -49,3 +49,33 @@
     }
   }
 }
+
+@include for-large-up {
+  .feedback {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+    align-items: center;
+    height: 355px;
+
+    &__comment {
+      width: 750px;
+      text-align: center;
+    }
+
+    &__user-name {
+      text-align: center;
+    }
+
+    &__image {
+      position: absolute;
+      right: 25px;
+      bottom: 0px;
+    }
+
+    &__line {
+      margin: 0;
+    }
+  }
+}
