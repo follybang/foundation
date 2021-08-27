@@ -1,32 +1,12 @@
-.top-section {
-  @include for-large-up {
-    background-color: $back-color;
-    padding-top: 39px;
-  }
-}
-
 .header {
   height: 64px;
   min-width: 320px;
   display: flex;
 
-  @include for-large-up {
-    width: 1140px;
-    height: 62px;
-    background-color: $back-color;
-    margin: auto;
-    display: flex;
-    align-items: center;
-  }
-
   &__start-button {
     width: 160px;
     height: 48px;
     margin-left: 56px;
-
-    @include for-small {
-      display: none;
-    }
   }
 
   &__menu-button {
@@ -35,10 +15,6 @@
     padding: 0;
     margin-left: auto;
     border-left: 1px solid #00000026;
-
-    @include for-large-up {
-      display: none;
-    }
   }
 
   &__menu-icon {
@@ -59,12 +35,6 @@
     width: 48px;
     height: 48px;
     margin: 8px 13px 8px 15px;
-
-    @include for-large-up {
-      width: 60px;
-      height: 60px;
-      margin-right: 15px;
-    }
   }
 
   &__text {
@@ -76,21 +46,12 @@
   &__name {
     font-weight: 700;
     font-size: 18px;
-
-    @include for-large-up {
-      line-height: 25px;
-      font-size: 20px;
-    }
   }
 
   &__description {
     line-height: 25px;
     font-size: 18px;
     opacity: 0.6;
-
-    @include for-small {
-      display: none;
-    }
   }
 }
 
@@ -123,8 +84,55 @@
     height: 5px;
     background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
   }
+}
 
-  @include for-small {
+@include for-large-up {
+  .top-section {
+    background-color: $back-color;
+    padding-top: 39px;
+  }
+
+  .header {
+    width: 1140px;
+    height: 62px;
+    background-color: $back-color;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    &__menu-button {
+      display: none;
+    }
+  }
+
+  .header-logo {
+    &__image {
+      width: 60px;
+      height: 60px;
+      margin-right: 15px;
+    }
+
+    &__name {
+      line-height: 25px;
+      font-size: 20px;
+    }
+  }
+}
+
+@include for-small {
+  .header {
+    &__start-button {
+      display: none;
+    }
+  }
+
+  .header-logo {
+    &__description {
+      display: none;
+    }
+  }
+
+  .navigation {
     display: none;
   }
 }

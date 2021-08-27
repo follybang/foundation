@@ -1,11 +1,6 @@
 .about {
   background-color: $second-back-color;
   padding: 46px 15px 46px 15px;
-
-  @include for-large-up {
-    display: flex;
-    padding: 77px 131px 76px 130px;
-  }
 }
 
 .article {
@@ -18,18 +13,25 @@
   &__text {
     line-height: 32px;
     font-size: 22px;
+  }
+}
 
-    @include for-large-up {
-      margin: 0;
-      margin-top: 6px;
-    }
+@include for-large-up {
+  .about {
+    display: flex;
+    padding: 77px 131px 76px 130px;
   }
 
-  @include for-large-up {
+  .article {
     width: 555px;
 
     &:first-child {
       margin-right: 29px;
+    }
+
+    &__text {
+      margin: 0;
+      margin-top: 6px;
     }
   }
 }
