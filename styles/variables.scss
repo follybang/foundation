@@ -5,21 +5,13 @@ $orange-font-color: #f1592b;
 $blue-font-color: #0189d1;
 $selected-blue-color: #3142c6;
 $third-blue-color: #3141c5;
+$border-color: #e3e3e3;
+$second-border-color: #2b292d33;
 
+$white: #fff;
 $back-color: #f3c6bd;
 $second-back-color: #f4f5f7;
+$third-back-color: #00a1c612;
 $inbox-back-color: #fcf0e366;
 
 $blue-color: #3040c4;
-
-@mixin for-large-up {
-  @media screen and (min-width: 1400px) {
-    @content;
-  }
-}
-
-@mixin for-small {
-  @media screen and (max-width: 1399px) {
-    @content;
-  }
-}

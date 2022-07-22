@@ -2,7 +2,7 @@
   padding: 50px 15px;
   display: flex;
   flex-direction: column;
-  background-color: #00a1c612;
+  background-color: $third-back-color;
 
   &__subtitle {
     text-align: center;
@@ -41,7 +41,7 @@
   width: 290px;
   height: 300px;
   border-radius: 8px;
-  background-color: #fff;
+  background-color: $white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -64,7 +64,7 @@
   }
 
   &:hover &__caption {
-    color: #fff;
+    color: $white;
   }
 }
 

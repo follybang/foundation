@@ -4,7 +4,7 @@
   background-color: $blue-color;
   border: none;
   border-radius: 2px;
-  color: #fff;
+  color: $white;
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
@@ -13,7 +13,7 @@
 .learn-more-button {
   width: 290px;
   height: 48px;
-  background-color: #fff;
+  background-color: $white;
   border: none;
   border-radius: 2px;
   color: $blue-color;
@@ -27,5 +27,5 @@
 }
 
 .line {
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid $border-color;
 }

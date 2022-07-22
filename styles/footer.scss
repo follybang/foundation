@@ -3,7 +3,7 @@
 
   &__line {
     margin-top: 40px;
-    border-top: 1px solid #e3e3e3;
+    border-top: 1px solid $border-color;
   }
 }
 
@@ -23,7 +23,7 @@
     font-size: 18px;
   }
 
-  &__desсription {
+  &__description {
     color: $second-font-color;
   }
 }
@@ -93,7 +93,7 @@
     }
 
     &__desktop-line {
-      border-bottom: 1px solid #e3e3e3;
+      border-bottom: 1px solid $border-color;
       margin-top: 59px;
     }
 
@@ -131,7 +131,7 @@
       line-height: 25px;
     }
 
-    &__desсription {
+    &__description {
       font-size: 18px;
       line-height: 25px;
     }
