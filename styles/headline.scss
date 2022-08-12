@@ -1,6 +1,10 @@
 .headline {
   background-color: $back-color;
-  padding: 35px 15px 36px 15px;
+  padding: 0px 0px 36px 0px;
+
+  &__text-block {
+    padding: 35px 15px 0px 15px;
+  }
 
   &__title {
     font-weight: 700;
@@ -24,10 +28,8 @@
   }
 
   &__image {
-    width: 320px;
+    width: 100%;
     height: 180px;
-    position: relative;
-    right: 15px;
   }
 }
 
@@ -39,6 +41,10 @@
     display: flex;
     margin-top: 76px;
     padding: 0;
+
+    &__text-block {
+      padding: 0px;
+    }
 
     &__title {
       font-size: 80px;
