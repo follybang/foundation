@@ -1,15 +1,17 @@
-# Foundation Website
+# Foundation Project
 
-The site is available at https://follybang.github.io/foundation/
+### [Site link](https://follybang.github.io/foundation/)
 
-Mobile(320px) and desktop(1400px) layout supported
+Layout supports mobile (up-to-320px) and desktop (up-to-1400px) versions
 
-The tech stack is:
+### The tech stack is:
 
-HTML5<br>
-CSS3<br>
-Flexbox<br>
-Sass (Scss)<br>
-BEM methodology<br>
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+- [Flexbox](https://en.wikipedia.org/wiki/CSS_Flexible_Box_Layout)
+- [Sass (Scss)](https://sass-lang.com/)
+- [BEM methodology](https://en.bem.info/methodology/)
 
-Author: Bohdan Drabynko
+### Author
+
+- Bohdan Drabynko
