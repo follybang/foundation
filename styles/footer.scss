@@ -79,6 +79,27 @@
     margin-right: 20px;
     display: block;
   }
+
+  &__twitter-icon {
+    display: inline-block;
+    width: 21px;
+    height: 16px;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-twitter.png);
+  }
+
+  &__facebook-icon {
+    display: inline-block;
+    width: 18px;
+    height: 17px;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-fb.png);
+  }
+
+  &__linkedin-icon {
+    display: inline-block;
+    width: 18px;
+    height: 17px;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-linkedIn.png);
+  }
 }
 
 @include for-large-up {
